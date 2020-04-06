@@ -283,7 +283,7 @@ Here are some examples:
 ```diff
   // changing severity
 - bugsnagClient.notify(err, { severity: 'info' })
-+ Bugsnag.notify(err, event => { severity: 'info' })
++ Bugsnag.notify(err, event => { event.severity = 'info' })
 
   // preventing send
 - bugsnagClient.notify(err, report => {
